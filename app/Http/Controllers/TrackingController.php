@@ -13,7 +13,7 @@ class TrackingController extends Controller
         $awb = $request->input('awb');
 
         $response = Http::get("https://api.binderbyte.com/v1/track", [
-            'api_key' => '254cefee14410a879a353c88d72b3c2bf93c147cb01ea03deb48ca07fbabdb10',
+            'api_key' => 'APIKEY_MU',
             'courier' => $kurir,
             'awb' => $awb,
         ]);
